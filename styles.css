@@ -25,10 +25,11 @@ a {
 
 form input{
     width: 30em;
-    height: 2.5em;
+    height: 1em;
     display: block;
     border: 2px solid var(--nord-dark);
     background: none;
+    padding: 1em;
 }
 
 form button {
