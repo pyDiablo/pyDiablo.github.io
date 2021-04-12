@@ -25,13 +25,14 @@ a {
 
 form {
     display: flex;
+    flex-direction: row;
 }
 
 form input{
     width: 30em;
     height: 2.5em;
     border: 2px solid var(--nord-dark);
-    border-right: 0px;
+    border-right: 0;
     background: none;
 }
 
