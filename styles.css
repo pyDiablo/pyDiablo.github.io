@@ -1,0 +1,76 @@
+:root {
+    --nord-dark: #4C566A;
+    --nord-light: #ECEFF4;
+    --nord-red: #BF616A;
+    --nord-blue: #81A1C1;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--nord-light);
+    color: var(--nord-dark);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.2em;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--nord-blue);
+}
+
+form {
+    display: flex;
+}
+
+form input{
+    width: 30em;
+    height: 2.5em;
+    border: 2px solid var(--nord-dark);
+    border-right: 0px;
+    background: none;
+}
+
+form button {
+    background: none;
+    border: 2px solid var(--nord-dark);
+    border-left: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.text-red {
+    color: var(--nord-red);
+}
+
+.text-dark {
+    color: var(--nord-dark);
+}
+
+main {
+    margin: 3em 0;
+}
+
+footer {
+    font-family: Consolas, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    form input {
+        width: 25em;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    small {
+        font-size: 0.75em;
+    }
+}
