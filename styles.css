@@ -23,6 +23,10 @@ a {
     color: var(--nord-blue);
 }
 
+form {
+    margin: auto;
+}
+
 form input{
     width: 30em;
     height: 1em;
