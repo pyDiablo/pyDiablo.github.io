@@ -36,6 +36,10 @@ form input{
     padding: 1em;
 }
 
+form input:focus {
+    outline: 0;
+}
+
 form button {
     height: 2.5em;
     width: 3.5em;
@@ -66,14 +70,14 @@ footer {
 
 @media screen and (max-width: 480px) {
     form input {
-        width: 25em;
+        width: 18em;
     }
 
     h1 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     small {
-        font-size: 0.75em;
+        font-size: 0.72em;
     }
 }
