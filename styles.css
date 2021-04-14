@@ -1,17 +1,4 @@
-:root {
-    --nord-dark: #4C566A;
-    --nord-light: #ECEFF4;
-    --nord-red: #BF616A;
-    --nord-blue: #81A1C1;
-}
-
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--nord-light);
-    color: var(--nord-dark);
-    font-family: 'JetBrains Mono', monospace;
     letter-spacing: 0.2em;
     text-align: center;
     height: 100vh;
@@ -20,64 +7,67 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--nord-blue);
 }
 
 form {
-    margin: auto;
+    display: flex;
 }
 
 form input{
-    width: 30em;
-    height: 1em;
-    display: block;
-    border: 2px solid var(--nord-dark);
-    background: none;
-    padding: 1em;
+    width: 28em;
+    height: 0.34em;
+    border: none;
+    background: #eee;
+    padding: 1rem;
 }
 
 form input:focus {
-    outline: 0;
+    outline: none;
 }
 
 form button {
-    height: 2.5em;
-    width: 3.5em;
-    background: none;
-    border: 2px solid var(--nord-dark);
-    margin-top: 10px;
+    background: #eee;
+    border: none;
 }
 
 .container {
+    height: 100vh;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .text-red {
-    color: var(--nord-red);
-}
-
-.text-dark {
-    color: var(--nord-dark);
+    color: red;
 }
 
 main {
     margin: 3em 0;
 }
 
-footer {
-    font-family: Consolas, sans-serif;
-}
-
 @media screen and (max-width: 480px) {
+    form {
+        display: initial;
+    }
+
     form input {
         width: 18em;
+        display: block;
+    }
+
+    form button {
+        margin-top: 0.75rem;
+        width: 3rem;
+        height: 2rem;
     }
 
     h1 {
-        font-size: 1.4em;
+        font-size: 1.6em;
     }
 
     small {
-        font-size: 0.72em;
+        font-size: 0.75em;
     }
 }
