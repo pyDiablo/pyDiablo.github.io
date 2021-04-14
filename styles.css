@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+header a {
+    list-style: none;
+    margin: 0 0.6rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -19,6 +24,7 @@ form input{
     border: none;
     background: #eee;
     padding: 1rem;
+    border-radius: 0;
 }
 
 form input:focus {
@@ -48,6 +54,10 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+    header a {
+        margin: 0 0.2rem;
+    }
+    
     form {
         display: initial;
     }
