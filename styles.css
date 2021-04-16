@@ -1,86 +1,117 @@
 body {
+    letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.2em;
-    text-align: center;
-    height: 100vh;
     margin: 0;
-}
-
-header a {
-    font-size: 0.785rem;
-    margin: 0 0.6rem;
 }
 
 a {
     text-decoration: none;
 }
-
-form {
-    display: flex;
-}
-
-form input{
-    width: 28em;
-    height: 0.34em;
-    border: none;
-    background: #eee;
-    padding: 1rem;
-    border-radius: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-form input:focus {
-    outline: none;
-}
-
-form button {
-    background: #eee;
-    border: none;
-}
-
+  
 .container {
-    height: 100vh;
-    padding: 20px;
+    /* border: 1px solid; */
+    margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
+    max-width: 80%;
+    height: 100vh;
 }
 
-.text-red {
-    color: red;
+#most-wanted {
+/*     border: 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    font-size: 0.83rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+#most-wanted a {
+    margin: 0rem 0.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    width: 100%;
 }
 
 main {
-    margin: 3em 0;
+    /* border: 1px solid; */
+    /*   width: 100%; */
+}
+
+.search-form {
+    display: flex;
+    padding: 1rem;
+}
+
+.search {
+    font-family: Arial;
+    width: 28rem;
+    height: 0.8rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
+    background: #f1f1f1;
+    outline: none;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    background: #f1f1f1;
+    padding: 0.8rem;
+}
+
+footer {
+/*     border: 1px solid; */
+    font-size: 0.83rem;
+    opacity: 0.6;
+}
+
+.heart-icon {
+    color: red;
+}
+
+@media screen and (max-width: 720px) {
+    #most-wanted {
+        width: 70%;
+    }
+    
+    .search {
+        width: 21rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    header a {
-        margin: 0 0.2rem;
+    #most-wanted {
+        width: 90%;
     }
     
-    form {
-        display: initial;
+    .search-form {
+        padding: 0;
     }
-
-    form input {
-        width: 18em;
-        display: block;
+    
+    .search {
+        width: 12rem;
     }
+}
 
-    form button {
-        margin-top: 0.75rem;
-        width: 3rem;
-        height: 2rem;
+@media screen and (max-width: 320px) {
+    #most-wanted {
+        width: 100%;
     }
-
-    h1 {
-        font-size: 1.6em;
-    }
-
-    small {
-        font-size: 0.75em;
+    
+    .search {
+        width: 11rem;
     }
 }

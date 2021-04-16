@@ -12,21 +12,25 @@
     <div class="container">
         <header>
             <h1>Good Day!</h1>
-            <a href="https://old.reddit.com">[reddit]</a>
-            <a href="https://www.youtube.com/feed/subscriptions">[youtube]</a>
-            <a href="https://genius.com">[genius]</a>
-            <a href="https://twitter.com">[twitter]</a>
+            <div id="most-wanted">
+                <a href="https://old.reddit.com">reddit</a>
+                <a href="https://youtube.com/feed/subscriptions">youtube</a>
+                <a href="https://genius.com">genius</a>
+                <a href="https://github.com">github</a>
+            </div>
         </header>
-    
+        
         <main>
-            <form action="https://duckduckgo.com/">
-                <input type="text" name="q" placeholder="Search DuckDuckGo..." autofocus>
-                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <form action="https://duckduckgo.com/" class="search-form">
+                <input type="text" name="q" class="search" placeholder="Search DuckDuckGo..." autofocus>
+                <div class="search-icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
             </form>
         </main>
-
+        
         <footer>
-            <small>Made with <span class="text-red">♥</span> by <a href="https://github.com/pyDiablo/">Salman</a></small>
+            <small>Made with <span class="heart-icon">♥</span> by <a href="https://github.com/pyDiablo/">Salman</a></small>
         </footer>
     </div>
 </body>
