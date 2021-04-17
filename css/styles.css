@@ -7,6 +7,15 @@ body {
 a {
     text-decoration: none;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+    width: 100%;
+}
   
 .container {
 /*     border: 1px solid; */
@@ -19,7 +28,7 @@ a {
     height: 100vh;
 }
 
-#most-wanted {
+#most-visited {
 /*     border: 1px solid; */
     display: flex;
     justify-content: space-evenly;
@@ -29,17 +38,8 @@ a {
     flex-wrap: wrap;
 }
 
-#most-wanted a {
+#most-visited a {
     margin: 0rem 0.5rem;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid; */
-    width: 100%;
 }
 
 main {
@@ -53,7 +53,7 @@ main {
 }
 
 .search {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     width: 28rem;
     height: 0.8rem;
     padding: 1rem;
