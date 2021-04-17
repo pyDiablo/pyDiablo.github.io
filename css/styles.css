@@ -1,11 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+    --nord-white: #d8dee9;
+    --nord-white-light: #e5e9f0;
+    --nord-black: #4c566a;
+    --nord-blue: #5e81ac;
+    --nord-blue-light: #81a1c1;
+    --nord-red: #bf616a;
+}
+
 body {
     letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'JetBrains Mono', Consolas, monospace;
     margin: 0;
+    background: var(--nord-white);
 }
 
 a {
     text-decoration: none;
+    color: var(--nord-blue);
 }
 
 header {
@@ -53,13 +67,14 @@ main {
 }
 
 .search {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'JetBrains Mono', Consolas, monospace;
     width: 28rem;
     height: 0.8rem;
     padding: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     border: none;
-    background: #f1f1f1;
+    background: var(--nord-white-light);
     outline: none;
     border-radius: 0;
 }
@@ -69,18 +84,22 @@ main {
     justify-content: center;
     align-items: center;
     /* border: 1px solid; */
-    background: #f1f1f1;
+    background: var(--nord-white-light);
     padding: 0.8rem;
 }
 
 footer {
 /*     border: 1px solid; */
     font-size: 0.83rem;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .heart-icon {
-    color: red;
+    color: var(--nord-red);
+}
+
+.nord-black {
+    color: var(--nord-black);
 }
 
 @media screen and (max-width: 720px) {
